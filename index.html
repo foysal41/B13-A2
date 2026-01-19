@@ -41,11 +41,14 @@
   <!-- Hero Section -->
    <section class="bg-[url(./assets/hero-bg.png)] bg-cover bg-center h-screen flex flex-col justify-center" >
     <!-- Microphone part -->
-    <div class="flex justify-center relative">
-         <img src="./assets/hero-circle.png" alt="gradient circle image" class="text-center ">
-         <img src="./assets/microphone.png" alt="Microphone photo" class="absolute top-1/2 left-1/2 -translate-1/2  ">
-         
-    </div>
+     <div class="relative w-[400px] mx-auto">
+        <div class="flex justify-center ">
+            <img src="./assets/hero-circle.png" alt="gradient circle image" class="text-center">
+            <img src="./assets/microphone.png" alt="Microphone photo" class="absolute top-1/2 left-1/2 -translate-1/2  ">
+            <span class="text-black absolute right-1/5 bg-[#00FF88] p-2 rounded-full">NEW</span>
+        </div>      
+     </div>
+
    
 
   <!-- Hero Info Part -->
@@ -58,7 +61,17 @@
     <!-- Duel Button -->
      <div>
         <button class="bg-gradient-to-r from-[#FB09B4] to-[#9100F8] py-4 px-5 rounded-[50px] text-white"><i class="fa-brands fa-spotify "></i>Listen on Spotify</button>
-        <button class="bg-transparent text-[#00FF88] border-1 border-[#00FF88] py-4 px-5 rounded-[50px]"><i class="fa-regular fa-envelope "></i>Subscribe</button>
+
+        <button class="relative py-[12px] rounded-full overflow-hidden ">
+          <span class="absolute inset-0 
+            bg-gradient-to-r from-[#F7D24B]  to-[#FB09B4]
+            animate-spin-slow"></span>
+
+          <span class="relative  bg-[#1B0F3A] text-[#00FF88]
+            px-6 py-3"><i class="fa-regular fa-envelope "></i>Subscribe</span>
+        </button>
+
+
      </div>
    </div>
 
@@ -171,7 +184,8 @@
          <div class="flex flex-col md:flex-row gap-8">
 
           <!-- Features Card One -->
-            <div class="flex flex-col gap-2 bg-[#250D44]  rounded-3xl">
+            <div class="flex flex-col gap-2 bg-[#250D44]  rounded-3xl relative">
+              <img src="./assets/play-icon.png" alt="play-icon" class="absolute top-24 left-1/2 cursor-pointer">
                <img src="./assets/Rectangle 1.png" alt="">
                   <div class="p-6">
                     <h3 class=" text-white text-2xl font-bold">The Future of AI in Everyday Life</h3>
@@ -183,7 +197,8 @@
 
 
                       <!-- Features Card two -->
-            <div class="flex flex-col gap-2 bg-[#250D44]  rounded-3xl">
+            <div class="flex flex-col gap-2 bg-[#250D44]  rounded-3xl relative">
+              <img src="./assets/play-icon.png" alt="play-icon" class="absolute top-24 left-1/2 cursor-pointer">
                <img src="./assets/Rectangle 1.png" alt="podcasting with two people">
                 <div class="p-6">
                     <h3 class=" text-white text-2xl font-bold">Building Better Habits for Remote Work</h3>
@@ -194,7 +209,8 @@
 
 
                       <!-- Features Card One -->
-           <div class="flex flex-col gap-2 bg-[#250D44]  rounded-3xl">
+           <div class="flex flex-col gap-2 bg-[#250D44]  rounded-3xl relative">
+            <img src="./assets/play-icon.png" alt="play-icon" class="absolute top-24 left-1/2 cursor-pointer">
                <img src="./assets/Rectangle 1.png" alt="">
                 <div class="p-6">
                     <h3 class=" text-white text-2xl font-bold">Career Growth in Tech: A Roadmap</h3>
@@ -206,6 +222,9 @@
       </div>
 
     </section>
+
+
+    
 
   <!-- Meet The Host  -->
    <section  class="bg-[#1A0B2E]">
@@ -231,6 +250,32 @@
     </div>
    </section>
 
+
+
+   <!-- Footer Section -->
+    <footer class="bg-[url(./assets/footer-bg.png)] bg-cover bg-center ">
+      <div class="max-w-7xl mx-auto py-20 px-5">
+
+        <div class="flex flex-col items-center justify-center gap-4">
+
+          <div>
+            <h2 class="text-white text-6xl font-bold">Tech<span class="text-transparent bg-clip-text bg-gradient-to-b from-[#9100F8] to-[#FB09B4]">Wave</span></h2>
+          </div>
+
+        
+          <div class="flex gap-4 items-center flex-wrap justify-center">
+            <div class="text-white/50"><i class="fa-brands fa-spotify text-white text-2xl"></i> Spotify</div>
+            <div class="text-white/50"><i class="fa-brands fa-apple text-white text-2xl"></i>Apple Podcasts</div>
+            <div class="text-white/50"><i class="fa-brands fa-youtube text-white text-2xl"></i> YouTube</div>
+            <div class="text-white/50"><i class="fa-brands fa-twitter text-white text-2xl"></i>Twitter</div>          
+          </div>
+
+          <p class="text-white/50">© 2026 TechWave Podcast. All rights reserved.</p>
+        </div>
+
+
+      </div>
+    </footer>
 
 </body>
 </html>
